@@ -1,7 +1,7 @@
 <project name="jenkins" default="jenkins">
   <description>
     What to do under continuous integration. Currently, do the same as verify.
-    Well, this is my turn.....!!!
+    Well, this is my turn.....!! Please build now....pleae....!
   </description>
   
   <import file="verify.build.xml" />
