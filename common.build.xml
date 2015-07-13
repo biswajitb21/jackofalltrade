@@ -11,10 +11,10 @@
   <property name="build.dir" location="${basedir}/build" />
 
   <!-- Make sure we're running a Java 6 or better. -->
-  <condition property="java.6.available">
-    <contains string="${java.version}" substring="1.6" />
+  <condition property="java.7.available">
+    <contains string="${java.version}" substring="1.7" />
   </condition>
-  <fail message="This package requires Java 6." unless="java.6.available" />
+  <fail message="This package requires Java 7." unless="java.7.available" />
 
   <!-- Make sure we're running Ant 1.8.  -->
   <condition property="ant.1.8.available">
