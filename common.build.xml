@@ -17,12 +17,12 @@
   <fail message="This package requires Java 7." unless="java.7.available" />
 
   <!-- Make sure we're running Ant 1.8.  -->
-  <condition property="ant.1.8.available">
+  <condition property="ant.1.9.available">
     <and>
-      <contains string="${ant.version}" substring="1.8" />
+      <contains string="${ant.version}" substring="1.9" />
     </and>
   </condition>
-  <fail message="This package requires Ant 1.8; found ${ant.version}" unless="ant.1.8.available" />
+  <fail message="This package requires Ant 1.9; found ${ant.version}" unless="ant.1.9.available" />
 
   <!-- Ivy download and configuration targets -->
   <property name="ivy.jar.path" location="${user.home}/.ivy2/ivyjar/" />
